@@ -37,7 +37,7 @@ const addDigit = (number) => {
     return number < 10 ? "0"+number : number
 }
 const date = new Date();
-const currentH = Math.floor(date.getHours() > 12 ? date.getHours()/2 : date.getHours());
+const currentH = Math.floor(date.getHours() > 12 ? date.getHours()-12 : date.getHours());
 const currentM = date.getMinutes();
 const currentS = date.getSeconds();
 
